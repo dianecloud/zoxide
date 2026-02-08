@@ -1,0 +1,6 @@
+[dependencies]
+foundations = { version = "0.1", features = ["telemetry", "security", "secrets"] }  # For production hardening
+lettre = { version = "0.11", features = ["tokio1-native-tls", "builder"] }
+mail-builder = "0.3"
+tokio = { version = "1", features = ["full"] }
+ring = "0.17"  # For cryptography in permissions
